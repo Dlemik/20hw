@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(4, auto) auto;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.login, .get-started {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.get-started {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.sub-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+.main-article {
+    grid-column: 1 / 2;
+    margin-top: 30px;
+}
+
+.recent-articles {
+    grid-column: 2 / 3;
+    margin-top: 45px;
+}
+
+.main-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.author {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.article {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.article-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+
+.article-author {
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.article-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
